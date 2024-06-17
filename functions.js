@@ -21,4 +21,19 @@ function generateRandomNumbers (min, max, maxLen) {
     return arrayRandomNumbers;
 }
 
-// funzione che genera numeri random in un range stabilito
+// comparazione di 2 array
+
+function compareArrays(arr1, arr2) {
+
+    // compare arrays
+    const result = JSON.stringify(arr1) == JSON.stringify(arr2)
+
+    // if result is true
+    if(result) {
+        console.log('The arrays have the same elements.');
+    }
+    else {
+        console.log('The arrays have different elements.');
+    }
+
+}
