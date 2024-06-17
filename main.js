@@ -21,12 +21,18 @@ function comparsaElemento () {
     copertura.classList.add("over");
 }
 
+// Array dei numeri indicati dall'user
+
+let arrayNumVisti= [];
+
 // chiedi all'utente di inserire uno alla volta i numeri che si ricorda
 
 for( let i = 0; i < 5; i++) {
     let cosaHaiVisto = parseInt(prompt("Inserisci uno dei numeri che hai visto"));
-    console.log(cosaHaiVisto);
+    arrayNumVisti.push(cosaHaiVisto);
 }
+
+console.log(arrayNumVisti);
 // costrare all'utente i numeri indovinati
 
 // chiedi all'utente qual numeri gli sono stati mostrati
