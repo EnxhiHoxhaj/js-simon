@@ -1,5 +1,11 @@
 // mostra 5 numeri random da far memorizare
 
+// seleziono il mio container e i div presenti in pagina
+
+let container = document.getElementById("container");
+let containerNumeri = document.getElementById("numbers");
+let messaggioFinale = document.getElementById("show_numbers");
+
 // genera un array di 5 numeri random
 
 // fagli comparire sullo schermo per 30 secondi
