@@ -15,24 +15,30 @@ containerNumeri.innerHTML = (arrayNumbers);
 console.log(arrayNumbers);
 
 // fagli comparire sullo schermo per soli 30 secondi
-setTimeout (comparsaElemento, 30000);
+setTimeout (comparsaElemento, 3000);
 // MyFunction
 function comparsaElemento () {
     copertura.classList.add("over");
 }
 
-// Array dei numeri indicati dall'user
+setTimeout (richiestaInserimentoNumeri, 3800)
 
-let arrayNumVisti= [];
+function richiestaInserimentoNumeri() {
+    // Array dei numeri indicati dall'user
+    let arrayNumVisti= [];
 
-// chiedi all'utente di inserire uno alla volta i numeri che si ricorda
+    // chiedi all'utente di inserire uno alla volta i numeri che si ricorda
 
-for( let i = 0; i < 5; i++) {
+    for( let i = 0; i < 5; i++) {
     let cosaHaiVisto = parseInt(prompt("Inserisci uno dei numeri che hai visto"));
     arrayNumVisti.push(cosaHaiVisto);
+    }
+
+    console.log(arrayNumVisti);
+    return arrayNumVisti;
 }
 
-console.log(arrayNumVisti);
-// costrare all'utente i numeri indovinati
+
+// mostrare all'utente i numeri indovinati
 
 // chiedi all'utente qual numeri gli sono stati mostrati
