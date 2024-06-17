@@ -23,6 +23,10 @@ function comparsaElemento () {
 
 // chiedi all'utente di inserire uno alla volta i numeri che si ricorda
 
+for( let i = 0; i < 5; i++) {
+    let cosaHaiVisto = parseInt(prompt("Inserisci uno dei numeri che hai visto"));
+    console.log(cosaHaiVisto);
+}
 // costrare all'utente i numeri indovinati
 
 // chiedi all'utente qual numeri gli sono stati mostrati
