@@ -1,15 +1,25 @@
 // mostra 5 numeri random da far memorizare
 
+// conteggio del tempo
+let conteggio;
+
 // seleziono il mio container e i div presenti in pagina
 
 let container = document.getElementById("container");
 let containerNumeri = document.getElementById("numbers");
-let messaggioFinale = document.getElementById("show_numbers");
+let copertura = document.querySelector(".hidde_numbers");
 
 // genera un array di 5 numeri random
 let arrayNumbers = generateRandomNumbers (1, 1000, 5);
+containerNumeri.innerHTML = (arrayNumbers);
 console.log(arrayNumbers);
-// fagli comparire sullo schermo per 30 secondi
+
+// fagli comparire sullo schermo per soli 30 secondi
+setTimeout (comparsaElemento, 30000);
+// MyFunction
+function comparsaElemento () {
+    copertura.classList.add("over");
+}
 
 // chiedi all'utente di inserire uno alla volta i numeri che si ricorda
 
