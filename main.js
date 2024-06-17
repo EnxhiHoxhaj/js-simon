@@ -7,7 +7,8 @@ let containerNumeri = document.getElementById("numbers");
 let messaggioFinale = document.getElementById("show_numbers");
 
 // genera un array di 5 numeri random
-
+let arrayNumbers = generateRandomNumbers (1, 1000, 5);
+console.log(arrayNumbers);
 // fagli comparire sullo schermo per 30 secondi
 
 // chiedi all'utente di inserire uno alla volta i numeri che si ricorda
